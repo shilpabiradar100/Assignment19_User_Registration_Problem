@@ -1,5 +1,6 @@
 import java.util.Scanner;
 public class UserRegistrationMain {
+
     public static void main(String args[])
     {
         System.out.println("Welcome to User Registration Problem");
@@ -50,6 +51,14 @@ public class UserRegistrationMain {
          */
         obj5.checkUpperCase(password);
 
-
+        /**UC7
+         * Check password has atleast one numeric number
+         */
+        obj5.checkNumericNumber(password);
+        /**UC8
+         * Check password has atleast one special character or not
+         */
+        obj5.checkSpecialCharacter(password);
     }
+
 }
