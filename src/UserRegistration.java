@@ -4,8 +4,26 @@ public class UserRegistration {
     /**
      * Method to check given first name is valid or not
      * with minimum characters 3 and ensure first letter is captial
+     * @param name
      */
     public void checkFirstName(String name)
+    {
+        boolean isMatched = Pattern.compile("(^([A-Z]{1})[a-z]{2,})+").matcher(name).matches();
+        if(isMatched)
+        {
+            System.out.println("It is valid name");
+        }
+        else
+        {
+            System.out.println("It is not a valid name");
+        }
+    }
+    /**
+     * Method to check given last name is valid or not
+     * with minimum characters 3 and ensure first letter is captial
+     * @param name
+     */
+    public void checkLastName(String name)
     {
         boolean isMatched = Pattern.compile("(^([A-Z]{1})[a-z]{2,})+").matcher(name).matches();
         if(isMatched)
